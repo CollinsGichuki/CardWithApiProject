@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import {
   ActivityIndicator,
   FlatList,
@@ -6,7 +6,7 @@ import {
   Text,
   View,
 } from "react-native";
-import { Card, ListItem, Button, Icon } from "react-native-elements";
+import { Card } from "react-native-elements";
 
 import { getPosts } from "./api/jsonTypicode";
 import { actionCreators, initialState, reducer } from "./reducers/post";
