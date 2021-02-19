@@ -50,7 +50,7 @@ export default function App() {
   return (
     <FlatList
       style={styles.container}
-      keyExtractor={(post) => post.id}
+      keyExtractor={(post) => post.id.toString()}
       data={posts}
       renderItem={({ item: { id, title, body }, index }) => (
         <Card key={id}>
