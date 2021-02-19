@@ -35,7 +35,6 @@ export default function App() {
     return (
       <View styles={styles.center}>
         <ActivityIndicator animating={true} />
-        console.log("Loading state")
       </View>
     );
   }
@@ -44,7 +43,6 @@ export default function App() {
     return (
       <View styles={styles.center}>
         <Text>Failed to load Posts</Text>
-        console.error();
       </View>
     );
   }
