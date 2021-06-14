@@ -10,6 +10,7 @@ const types = {
 export const actionCreators = {
   loading: () => ({ type: types.LOADING }),
   failure: () => ({ type: types.FAILURE }),
+  //If the network call is successful, we pass the response
   success: (payload) => ({ type: types.SUCCESS, payload }),
 };
 
