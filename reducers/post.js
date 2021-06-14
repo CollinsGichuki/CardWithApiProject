@@ -1,3 +1,6 @@
+//This file controls the api network call status
+
+//The action types
 const types = {
   LOADING: "LOADING",
   SUCCESS: "SUCCESS",
@@ -16,6 +19,9 @@ export const initialState = {
   posts: [],
 };
 
+//The reducer function
+//takes in the previous state and an action
+//returns new state according to the action
 export function reducer(state, action) {
   switch (action.type) {
     case types.LOADING:
